@@ -21,11 +21,11 @@ export default function ShowDetail() {
             <h2 className="text-xl font-semibold">Cast</h2>
             <ul className="list-disc pl-5">
               {show.cast.map((member, i) => (
-                <>
-                  <FavoriteButton showId={show.id} />
-                  <li key={i}>{member}</li>
-                </>
-              ))}
+  <>
+    <FavoriteButton showId={show.id} />
+    <li key={i}>{member}</li>
+  </>
+))}
             </ul>
           </div>
         </div>
